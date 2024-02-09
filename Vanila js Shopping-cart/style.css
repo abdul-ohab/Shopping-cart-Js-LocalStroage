@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 60px;
+    color: white;
+    background-color: #14213d;
+}
+.logo{
+    position: relative;
+    color: #14213d;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 20px;
+    background-color: white;
+}
+.cartAmount{
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    background-color: red;
+    border-radius: 3px;
+    padding: 3px;
+    font-size: 16px;
+}
+.cart{
+    display: grid;
+    grid-template-columns: repeat(4, 223px);
+    justify-content: center;
+    gap: 15px;
+    margin-top: 5rem;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+@media (max-width: 1000px){
+    .cart{
+        grid-template-columns: repeat(2, 223px);
+    }
+}
+@media (max-width: 500px){
+    .cart{
+        grid-template-columns: repeat(1, 223px);
+    }
+}
+.cart img{
+    width: 219px;
+}
+.details{
+    border: 2px solid #14213d;
+    border-radius: 8px;
+}
+.cart-body{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    text-transform: capitalize;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+}
+.buttons i{
+    font-size: 25px;
+    cursor: pointer;
+}
+.bi-dash{
+    color: red;
+    font-weight: bold;
+}
+.bi-plus{
+    color: green;
+    font-weight: bold;
+}
+.quantity{
+    font-size: 18px;
+}
+.shop-cart{
+    display: grid;
+    grid-template-columns: repeat(1, 310px);
+    justify-content: center;
+    gap: 15px;
+    margin-top: 2rem;
+}
+.cart-div{
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+    text-transform: capitalize;
+}
+.cart-title{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    padding: 5px;
+    width: 200px;
+}
+.cart-heading{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.bi-x-lg{
+    color: red;
+}
+.amount{
+    background-color: #212529;
+    border-radius: 4px;
+    padding: 3px 5px;
+    color: white;
+}
+h3{
+    margin-left: 5px;
+}
